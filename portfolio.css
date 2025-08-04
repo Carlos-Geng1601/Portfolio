@@ -1,0 +1,169 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+}
+nav{
+  flex: auto;
+  text-align: right;
+  justify-content: space-around;
+}
+ul{
+  display: inline-block;
+  list-style: none;
+}
+li{
+  display: inline-block;
+  margin-right: 20px;
+}
+.navbar nav ul li a{
+  text-decoration: none;
+  color: #000;
+  font-weight: 500;
+  position: relative;
+}
+.navbar nav ul li a::after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  transition: witdh 0.3s ease;
+} 
+.navbar nav ul li a:hover{
+  color: #f00;
+  transition: color 0.5s;
+
+}
+
+.navbar nav ul li a:hover::after{
+  width: 100%;
+}
+ 
+span{
+  color: #f00;
+}
+/*-------------------Iformation1--------------*/
+.container{
+  background:white;
+  max-width: 1350px;
+  padding:0 20px;
+}
+.container1{
+  background:white;
+  max-width: 1300px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin: auto;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.column2{
+  flex-basis:50;
+  padding-left: 50px;
+}
+.column2 image{
+  width: 100%;
+  height: auto;
+}
+/*-------------------formation2--------------*/
+.container{
+  max-width: 1300px;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+/*-------------------colors of tags--------------*/
+h2{
+  color:green;
+}
+h3{
+  color:green;
+}
+p{
+  color: green;
+}
+/*-------------------formation3--------------*/
+.services{
+  padding: 20px;
+}
+.small-container{
+  max-width: 1200px;
+  margin: auto;
+  color: #ff004f;
+}
+/*-------------------add box--------------*/
+.services .col3{
+  flex-basis: 30%;
+  padding:$0px 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  color: #fff;
+}
+.services.col3:hover{
+  transform: translateY(-5px);
+
+
+}
+ Basic Reset */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* ----------------------Container for centering content--------------- */
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+/* ---------------------Style for the contact form------------------- */
+.contact-form {
+  max-width: 600px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ------------------Heading style---------------------- */
+.contact-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* -------------Label styling------------------ */
+.contact-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+}
+
+/* -----Input fields styling ------------------*/
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+}
